@@ -4796,7 +4796,7 @@ To upgrade:
     ```php
     'companies' => [
         'label' => 'Companies',
-        'template' => 'vendor/laravel-enso/companies/src/App/Imports/Templates/companies.json',
+        'template' => 'vendor/liberu.co.ukpanies/src/App/Imports/Templates/companies.json',
     ],
     ```
     - update `app` namespace to `App` for userGroups' importer
@@ -6656,7 +6656,7 @@ using the available format(s), `Carbon::parse` will be used as fallback
 - if you want to install the calendar package:
     - `composer require laravel-enso/calendar:1.3.x`, then add
     - `yarn add @enso-ui/calendar@1.2.x`
-    - read [docs](https://docs.laravel-enso.com/backend/calendar.html#installation)
+    - read [docs](https://docs.liberu.co.uk/backend/calendar.html#installation)
 - `php artisan enso:upgrade`
 - `php artisan migrate`
 
@@ -8286,7 +8286,7 @@ Enjoy!
 - refactor the deprecated FE helpers (global mixins) with the new injected ones available in v3.x:
   - `__` to `i18n`
   - `handleError` to `errorHandler`
-- refactor the `Rememberable` use according with the new [version](https://docs.laravel-enso.com/packages/rememberable.html)
+- refactor the `Rememberable` use according with the new [version](https://docs.liberu.co.uk/packages/rememberable.html)
 - when `TableCache` trait is used you can safely drop the `protected $cachedTable = 'tableId';` property; now the trait autodetects the table's name
 - update the core dependency in `composer.json` to: `"laravel-enso/core": "4.2.*"`
 - update the ui dependency in `package.json` to: `"@enso-ui/ui": "~1.2.0",`
@@ -8772,7 +8772,7 @@ pagination
 - update `composer.json` by removing the following dependencies:
 ```json
 "laravel-enso/addressesmanager": "2.5.*",
-"laravel-enso/commentsmanager": "2.4.*",
+"liberu.co.ukmentsmanager": "2.4.*",
 "laravel-enso/discussions": "1.1.*",
 "laravel-enso/documentsmanager": "2.4.*",
 "laravel-enso/how-to": "2.2.*",
@@ -8996,7 +8996,7 @@ thanks to the our newest package [laravel-enso/multitenancy](https://github.com/
 ### Improvements
 - for more information on multitenancy, take a look at the documentation
 - adds caching support for totals in tables; this can be have a great positive impact in large tables.
-For more info check the [docs](https://docs.laravel-enso.com/packages/vue-datatable.html#caching-support)
+For more info check the [docs](https://docs.liberu.co.uk/packages/vue-datatable.html#caching-support)
 - strengthens the user -> person -> company -> userGroup -> roles policies, getting ready for MT :D
 - upgrades horizon to 2.0.x
 
@@ -9292,7 +9292,7 @@ This is yet another step towards our vision for Liberu and rest assured, there i
 ### Upgrade instructions - estimated time per project ~ 10-15min
 - update in `composer.json`: "laravel-enso/core": "3.4.*"
 - from `composer.json`, remove the packages:
-    * "laravel-enso/companies"
+    * "liberu.co.ukpanies"
     * "laravel-enso/dataimport"
 - run `composer update`
 - run `php artisan migrate`
@@ -9456,7 +9456,7 @@ Note: For existing projects replace the old ContactFactory with the one provided
 Steps for upgrade:
 
 - `composer remove laravel-enso/contacts`
-- update in componse.json `"laravel-enso/companies": "1.1.*",`
+- update in componse.json `"liberu.co.ukpanies": "1.1.*",`
 - `composer update`
 - `php artisan migrate`
 - `rm config/enso/contacts.php`
@@ -9703,8 +9703,8 @@ Make sure you have a backup of your database before starting. If you find any pr
 
 - update `composer.json` dependencies:
     - "laravel-enso/addressesmanager": "2.4.*",
-    - "laravel-enso/commentsmanager": "2.4.*",
-    - "laravel-enso/companies": "1.0.*",
+    - "liberu.co.ukmentsmanager": "2.4.*",
+    - "liberu.co.ukpanies": "1.0.*",
     - "laravel-enso/contacts": "2.3.*",
     - "laravel-enso/dataimport": "2.5.*",
     - "laravel-enso/discussions": "1.1.*",
@@ -9788,7 +9788,7 @@ The upgrade steps are similar to [AddressManager](#morphable)
 
 #### Installation
 It comes by default in an fresh Liberu. To install it in an existing project:
- - `composer require laravel-enso/companies`
+ - `composer require liberu.co.ukpanies`
  - `php artisan migrate`
  - `php artisan vendor:publish --tag=companies-assets`
  - `yarn dev` / `npm run dev`
@@ -10617,7 +10617,7 @@ The trait creates a `file` `morphOne` relationship to the base model and makes a
 
 ## 2.8.28
 - fixes a series of small bugs in stub filling for StructureMigration
-- adds "selectable" to the vue table - check the [example table](https://www.laravel-enso.com/examples/table)
+- adds "selectable" to the vue table - check the [example table](https://www.liberu.co.uk/examples/table)
 - improves the form build when having an edit form. Now you can mutate field values for edit forms too with the `values()` method using the fluent syntax
 - updates all composer & npm dependencies
 
@@ -10750,7 +10750,7 @@ Upgrade steps:
 
 ## 2.8.14
 
-- we have just launched the new documentation [website](https://docs.laravel-enso.com)
+- we have just launched the new documentation [website](https://docs.liberu.co.uk)
 - on touch devices the menu hides once an option is selected
 - refactor in menu drawing, the code is now DRY
 - fixes bug in dataimport for rows that were ending in null cells
@@ -11048,7 +11048,7 @@ To upgrade a project do the following:
 - fixes the publishing path for `HowToVideo.vue`
 - fixes keys in `Documents.vue`
 - refactors CommentsManager with a breaking change.
-To update an existing project first change the composer requirement to : "laravel-enso/commentsmanager": "2.3.*", and after the update run `php artisan enso:comments:update-table`
+To update an existing project first change the composer requirement to : "liberu.co.ukmentsmanager": "2.3.*", and after the update run `php artisan enso:comments:update-table`
 
 ## 2.7.11
 General BE refactor.
@@ -11300,7 +11300,7 @@ Updates composer and npm packages.
 Splits Documents.vue in two separate components. Now we have DocumentsCard as a wrapper and Documents.vue for custom implementations. The same for Comments.vue.
 
 Upgrading existing projects:
-    - Update in your composer.json: "laravel-enso/commentsmanager": "2.2.*" and "laravel-enso/documentsmanager": "2.2.*",
+    - Update in your composer.json: "liberu.co.ukmentsmanager": "2.2.*" and "laravel-enso/documentsmanager": "2.2.*",
     - Update owners\Edit.vue from this repo, and any other views that use the updated components.
 
 ## 2.6.2

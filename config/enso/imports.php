@@ -97,7 +97,7 @@ return [
     'configs' => [
         'companies' => [
             'label' => 'Companies',
-            'template' => 'vendor/laravel-enso/companies/src/Imports/Templates/companies.json',
+            'template' => 'vendor/liberu.co.ukpanies/src/Imports/Templates/companies.json',
         ],
         'userGroups' => [
             'label' => 'User Groups',
