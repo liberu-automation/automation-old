@@ -1,0 +1,40 @@
+{
+    "routePrefix": "product",
+  "tabs": true,
+  "sections" : [
+    {
+        "tab" : "ProductCategory",
+        "columns" : 3,
+        "fields" : [
+            {
+            "label": "Product Name",
+            "name": "name",
+            "value": null,
+            "meta": {
+                "type": "input",
+                "content": "text"
+            }
+        },
+
+        {
+            "label": "Product Is_child",
+            "name": "is_child",
+            "value": null,
+            "meta" : {
+                "type": "input",
+                "content": "text"
+            }
+        },
+        {
+            "label": "Product Is_child",
+            "name": "child_of",
+            "value": null,
+            "meta" : {
+                "type": "input",
+                "content": "text"
+            }
+        }
+        ]
+    }
+  ]
+}

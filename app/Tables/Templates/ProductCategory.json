@@ -1,0 +1,31 @@
+{
+    "name": "Product",
+    "routePrefix": "product",
+    "crtNo": true,
+    "buttons": ["excel", "create", "show", "edit", "destroy"],
+    "columns": [{
+        "label": "Id",
+        "name": "id",
+        "data": "product_categories.product_category_id",
+        "meta": ["searchable", "sortable"]
+    },
+    {
+        "label": "Product Category Name",
+        "name": "name",
+        "data": "product_categories.name",
+        "meta": ["searchable", "sortable"]
+    },
+    {
+        "label": "Category is child",
+        "name": "product_category_id",
+        "data": "products.is_child",
+        "meta": ["searchable", "sortable"]
+    },
+    {
+        "label": "Category  child of",
+        "name": "product_category_id",
+        "data": "products.child_of",
+        "meta": ["searchable", "sortable"]
+    }
+    ]
+}
