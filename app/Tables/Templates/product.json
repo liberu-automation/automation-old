@@ -8,6 +8,61 @@
         "name": "id",
         "data": "products.product_id",
         "meta": ["searchable", "sortable"]
+    },
+    {
+        "label": "Name",
+        "name": "product_name",
+        "data": "products.product_name",
+        "meta": ["searchable", "sortable"]
+    },
+    {
+        "label": "Category Id",
+        "name": "product_category_id",
+        "data": "products.product_category_id",
+        "meta": ["searchable", "sortable"]
+    },
+    {
+        "label" : "Product short description",
+        "name" : "product_short_description",
+        "data" : "products.short_description",
+        "meta" : ["searchable", "sortable"]
+    },
+    {
+        "label" : "Product long description",
+        "name" : "product_long_description",
+        "data" : "products.long_description",
+        "meta" : ["searchable", "sortable"]
+    },
+    {
+      "label" : "Product price",
+      "name" : "product_price",
+      "data" : "products.price",
+      "meta" : ["searchable", "sortable"]  
+    },
+    {
+        "label" : "Product is variable",
+        "name" : "is_variable",
+        "data" : "products.is_variable",
+        "meta" : ["searchable", "sortable"]
+    },
+    {
+        "label" : "Product is Grouped",
+        "name" : "is_grouped",
+        "data" : "products.is_grouped",
+        "meta" : ["searchable", "sortable"]
+    },
+    {
+        "label" : "Product is simple",
+        "name" : "is_simple",
+        "data" : "products.is_simple",
+        "meta" : ["searchable", "sortable"]
+    },
+    {
+        "label" : "Product Image",
+        "name" : "product_image",
+        "data" : "products.product_image",
+        "meta" : ["searchable", "sortable"]
+
     }
     ]
 }
