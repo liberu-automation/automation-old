@@ -1,0 +1,83 @@
+{
+    "routePrefix": "customer",
+  "tabs": true,
+  "sections": [
+    {
+      "tab": "Customer",
+      "columns": 3,
+        "fields": [{
+            "label": "First name",
+            "name": "first_name",
+            "value": null,
+            "meta": {
+                "type": "input",
+                "content": "text"
+            }
+        },
+            {
+                "label": "Last name",
+                "name": "last_name",
+                "value": null,
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Email",
+                "name": "email",
+                "value": null,
+                "meta": {
+                    "type": "text",
+                    "content": "email"
+                }
+            },
+            {
+                "label": "Phone",
+                "name": "phone_number",
+                "value": null,
+                "meta": {
+                    "type": "text",
+                    "content": "number"
+                }
+            },
+            {
+                "label": "Address",
+                "name": "address",
+                "value": null,
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "City",
+                "name": "city",
+                "value": null,
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+
+            {
+                "label": "State",
+                "name": "state",
+                "value": null,
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Postal code",
+                "name": "postal_code",
+                "value": null,
+                "meta": {
+                    "type": "input",
+                    "content": "number"
+                }
+            }
+        ]
+    }]
+}
