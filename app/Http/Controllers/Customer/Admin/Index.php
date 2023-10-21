@@ -16,10 +16,10 @@ class Index extends Controller
             $query->where('first_name', 'like', '%' . $request->search . '%');
         }
 
-        $products = $query->paginate(10);
+        $customer = $query->paginate(10);
 
         return [
-            'products' => $products
+            'products' => $customer
         ];
     }
     
